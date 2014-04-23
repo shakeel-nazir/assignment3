@@ -219,7 +219,6 @@ figcaption {
     width: 4rem;
     position: relative;
     left: 2rem;
-    bottom: 3.9rem
 }
 
 
@@ -228,7 +227,6 @@ figcaption {
     height: 4rem;
     width: 4rem;
     position: relative;
-    bottom: 7.9rem;
     left: 17rem; 
     
 }
@@ -238,7 +236,6 @@ figcaption {
     height: 4rem;
     width: 4rem;
     position: relative;
-    bottom: 11.9rem;
     left: 9.5rem;
     
 }
@@ -247,7 +244,6 @@ p {
     
     margin: 0 1;
     position: relative;
-    top:7rem;
     background-color: #500000;
     text-align: center;
     padding: 5%;
@@ -335,9 +331,9 @@ h3 {
 
 .video {
 	position: relative;
-	padding-bottom: 56.5%; /* Adjust to fit video ratio */
+	padding-bottom: 56.5%; 
 	padding-top: 25px;
-	height: 0;       
+	height: 0;  
 }
 
 .video iframe {
@@ -350,4 +346,31 @@ h3 {
 }
 
 
+
+
+.social { 
+    overflow:  hidden;
+}
+
+.social figure {
+    margin: 0;
+    padding: 0;
+}
+
+.social a,
+.social a:link,
+.social a:visited {
+    float: left;
+    width: 20%; 
+    margin:  10% 1.5rem 0; 
+    padding: 0;
+}
+
+p2 {
+    position: relative;
+    top: 2rem;
+    background-color: red;
+        
+   
+}
 
