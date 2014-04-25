@@ -6,35 +6,34 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
-* {
-    
+* { 
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-    
+	box-sizing: border-box; 
 }
 
 html {
-    
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
     background-color: #996600;
     font-size: 100%;
-    
 }
 
 body {
-    
     margin: .5rem;
     padding: 0;
     position: relative;
-    
+}
+
+a, 
+a:link,
+a:visited {
+    text-decoration: none;
 }
 
 header {
-    
     overflow: hidden;
     width: 100%;
     top: 0;
@@ -42,21 +41,17 @@ header {
     margin: 0;
     padding: 0;
     background-color:#500000; 
-    
 }
 
 .logo {
-    
     display: block;
     width: 40%;
     margin: 1.5rem 5%;
-    
 }
 
 .nav-btn,
 .nav-btn:link,
 .nav-btn:visited {
-    
 	height: 3rem;
     width: 3rem;
 	overflow: hidden;
@@ -66,108 +61,87 @@ header {
 	background: transparent url("../images/hamburger.svg") no-repeat 0 0;
 	text-indent: 100%;
 	white-space: nowrap;
-    
 }
 
 .nav-top {
-    
 	max-height: 0; 
     background-color: black;
 	-moz-transition: all 250ms linear;
 	-o-transition: all 250ms linear;
 	-webkit-transition: all 250ms linear;
-	transition: all 250ms linear;
-    
+	transition: all 250ms linear;    
 }
 
-.nav-top[data-state="expanded"] {
-    
+.nav-top[data-state="expanded"] {  
 	max-height: 14rem;
-    
 }
 
 .nav-top ul { 
-    
 	margin: 0;
     padding: 1rem 34.5%;
     list-style-type: none;
-  
 }
 
 .nav-top a,
 .nav-top a:link,
 .nav-top a:visited {
-    
 	display: block;
 	font-size: 1.25rem;
     padding: .8rem 4% 11%;
 	color: white;
 	text-decoration: none;
     font-family: 'Coda Caption', sans-serif;
-    
+    text-align: center;
 }
 
 img {
-    
 	width: 100%;
     display: block;
-    
 }
 
 .banner1 {
-    
     padding:0; 
     margin:0;
     background-image: url(../images/first-banner-picture.jpg);
     overflow: hidden;
-    background-size: 50rem;
+    background-size: 150%;
     background-position: center top;
     background-repeat: no-repeat;
     height: 22rem;
-    
 }       
 
 h1 { 
-    
     margin: 9rem 0 ;
     padding: 0;
     text-align: center;
     color: white;
     font-family: 'Coda Caption', sans-serif;
     letter-spacing: 0rem;
-    
 }
 
 .headline1 {
-    
     display: block;
     border-bottom: .25rem solid white;
     margin: 0 15% 1.5rem;
-    padding: 0 0 1rem 0;
+    padding: 0 0 1rem;
     font-size: 70%;
-    
 }
 
 .headline2 {
-    
     display: block;
     margin: 0 15% 1.5rem;
     padding: 0 0 1rem 0;
     font-size: 70%;
-
 }
 
 .hr { 
-    
     margin: -9rem 0; 
     padding: .3rem 5% .7rem; 
     position: absolute;
     width: 23rem;
-    
 }
 
 .buckets figure {
-    
     padding: 0; 
     margin: 0;
     background-image: url(../images/2nd-banner-picture.jpg);
@@ -176,11 +150,9 @@ h1 {
     background-repeat: no-repeat;
     height: 16rem;
     position: relative;
-    
 } 
 
 .buckets2 figure {
-    
     padding: 0; 
     margin: 0;
     background-image: url(../images/3rd-banner-picture.jpg);
@@ -188,12 +160,10 @@ h1 {
     background-size: 100%;
     background-repeat: no-repeat;
     height: 16rem;
-    position: relative;
-    
+    position: relative;  
 }
 
 figcaption {
-    
     position: relative;
     top: 5rem;
     font-size: 6rem;
@@ -201,38 +171,30 @@ figcaption {
     text-align: center;
     font-size: 250%;
     font-family: 'Coda Caption', sans-serif;
-    
 }
 
 .youtube {
-    
     height: 4rem;
     width: 4rem;
     position: relative;
     left: 2rem;
-    
 }
 
 .facebook {
-    
     height: 4rem;
     width: 4rem;
     position: relative;
-    left: 17rem; 
-    
+    left: 17rem;  
 }
     
 .twitter {
-    
     height: 4rem;
     width: 4rem;
     position: relative;
     left: 9.5rem;
-    
 }
 
 p {
-    
     margin: 0 1;
     position: relative;
     background-color: #500000;
@@ -241,111 +203,87 @@ p {
     right: .1%;
     font-family: helvetica,sans-serif;
     color: white;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem; 
 }
 
 .bucket1 { 
-    
     overflow: hidden;
     position: relative;
     top: 2rem;
-     
 }
 
 .bucket1 figure {
-    
     margin: 0;
     padding: 0;
-
 }
 
 .bucket1 a,
 .bucket1 a:link,
 .bucket1 a:visited {
-
     float: left;
     width: 45%; 
     margin: 0 10% 3.5rem 0; 
     padding: 0;
-
 }
 
 .bucket1 a:nth-child(even) {
-
     margin: 0;     
-    
 }
 
 .type {
-    
     background-color:  white; 
     font-family: 'Coda Caption', sans-serif;
     color: black;
     font-size: 1rem;
     letter-spacing: 0rem;
-    padding: 1rem;
-
+    padding: 1.5rem;
 }
 
 h3 {
-    
     margin: 5rem 0;
     color: white;
     font-family: 'Coda Caption', sans-serif;
     letter-spacing: 0rem;  
     background: rgba(0, 0, 0, 0.4);
     padding: .5rem; 
-    
 }
     
 .billboard {
-    
     background-image: url(../images/shoes-week.jpg);
     overflow: hidden;
     background-size: 100%;
     background-repeat:  no-repeat;
     margin-top: 1rem;
-
 }
 
 summary {
-     
     font-family: 'Coda Caption', sans-serif;
     background-color: white;
     font-size: .75rem;
     color: #500000;
     padding: .5rem
-     
  }
 
 .heading {
-
     font-family: 'Coda Caption', sans-serif;
     color: white;
     font-size: .8rem;
     background: rgba(0, 0, 0, 0.4);
-
 }
     
 .product {
-    
     height: 23rem;
     width: 23rem;
-
 }
 
 .video {
-    
 	position: relative;
 	padding-bottom: 56.5%; 
 	padding-top: 25px;
 	height: 0;  
-
 }
 
 .video iframe {
-    
     margin-top: 1rem;
     border: 0; 
 	position: absolute;
@@ -353,35 +291,27 @@ summary {
 	left: 0;
 	width: 100%;
 	height: 100%;
-
 }
 
 .social {
-    
     overflow: hidden;
-
 }
 
 .social figure {
-    
     margin: 0;
     padding: 0;
-
 }
 
 .social a,
 .social a:link,
 .social a:visited {
-    
     float: left;
     width: 21%; 
     margin: 5% 6% 0; 
     padding: 0;
-
 }
 
 .about {
-    
     margin: 0 1;
     position: relative;
     background-color: #500000;
@@ -391,6 +321,5 @@ summary {
     margin-top: 2rem;
     font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
     line-height: 1.5rem;
-
 }
     
